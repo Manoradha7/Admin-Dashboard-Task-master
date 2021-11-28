@@ -3,16 +3,16 @@ import { Sidebar } from "./Sidebar";
 import { Navbar } from "./Navbar";
 import { Contents } from "./Contents";
 
-export const drawerWidth = 240;
+export const drawerWidth = 250;
 
 export default function App() {
   return (
     <div className="App">
-      {/* making the sidebar */}
+      {/* Calling the sidebar function component */}
       <Sidebar />
-      {/* making the appbar */}
+      {/*Calling the navbar function component */}
       <Navbar />
-      {/* making the body content */}
+      {/* Calling the contents function  component */}
       <Contents />
     </div>
   );

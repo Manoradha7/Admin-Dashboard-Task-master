@@ -33,7 +33,8 @@ export function Sidebar() {
       sx={{ width: { sm: drawerWidth, xs: 0 }, flexShrink: { sm: 0 } }}
       aria-label="mailbox folders"
     >
-      {/* drawer for laptop view */}
+
+      {/* craeting drawer and its components */}
       <Drawer
         sx={{
           width: { sm: drawerWidth },
@@ -61,7 +62,6 @@ export function Sidebar() {
           SB ADMIN <sup>2</sup>
         </Button>
         <Divider />
-        {/* dashboard button */}
         <Button
           variant="text"
           sx={{
@@ -101,7 +101,8 @@ export function Sidebar() {
             <KeyboardArrowDownIcon sx={{ marginLeft: "auto" }} />
           )}
         </Button>
-        {/* making popover for the button */}
+
+        {/* Using conditional rendering making popover for the button */}
         {show ? (
           <div style={{ backgroundColor: "white" }}>
             <Typography
@@ -163,7 +164,8 @@ export function Sidebar() {
             <KeyboardArrowDownIcon sx={{ marginLeft: "auto" }} />
           )}
         </Button>
-        {/* making for popover */}
+
+        {/* Using conditional rendering making for popover */}
         {showme ? (
           <div style={{ backgroundColor: "white" }}>
             <Typography
@@ -247,11 +249,7 @@ export function Sidebar() {
           startIcon={<FolderIcon />}
         >
           Pages
-          {!showing ? (
-            <KeyboardArrowRightIcon sx={{ marginLeft: "auto" }} />
-          ) : (
-            <KeyboardArrowDownIcon sx={{ marginLeft: "auto" }} />
-          )}
+         
         </Button>
         {showing ? (
           <div style={{ backgroundColor: "white" }}>
@@ -366,6 +364,8 @@ export function Sidebar() {
           Tables
         </Button>
         <Divider />
+
+        {/* Upgrade to pro options */}
         <Card
           sx={{
             maxWidth: 220,

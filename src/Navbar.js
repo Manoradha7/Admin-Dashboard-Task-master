@@ -46,6 +46,7 @@ export function Navbar() {
   const [anchor, setAnchor] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
   const [anchorE2, setAnchorE2] = useState(null);
+  
   // for mobile Drawer
   const [opened, setopened] = useState(false);
   const handleDrawerOpen = () => {
@@ -54,6 +55,7 @@ export function Navbar() {
   const handleDrawerClose = () => {
     setopened(false);
   };
+  
   // for search icon
   const click = (event) => {
     setAnchor(event.currentTarget);
@@ -62,6 +64,7 @@ export function Navbar() {
     setAnchor(null);
   };
   const sow = Boolean(anchor);
+  
   // for alert mesage box
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -70,6 +73,7 @@ export function Navbar() {
     setAnchorEl(null);
   };
   const open = Boolean(anchorEl);
+  
   // for message alert box
   const handleClick1 = (event) => {
     setAnchorE2(event.currentTarget);
@@ -89,7 +93,7 @@ export function Navbar() {
   };
 
   return (
-    // app bar for the website
+    // Navbar Section
     <AppBar
       position="static"
       className="appbar"
